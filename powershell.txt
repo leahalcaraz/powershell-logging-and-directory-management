@@ -1,0 +1,25 @@
+PS C:\Powershell_Test2> Get-History
+
+  Id CommandLine
+  -- -----------
+   1 Start-Transcript C:\Powershell\Logs.txt
+   2 New-Item -ItemType Directory -Path "C:\Powershell_Test2\"
+   3 cd C:\Powershell_Test2\
+   4 Get-Location
+   5 New-Item -ItemType Directory -Path ".\XXXX"
+   6 New-Item -ItemType Directory -Path ".\XXXX\XXXX"
+   7 tree 
+   8 Set-Content -Path ".\XXXX\XXXX\XXXX.txt" -Value "I hate plagiarism"
+   9 tree /f
+  10 Get-Content ".\XXXX\XXXX\XXXX.txt"
+  11 Move-Item ".\XXXX\XXXX\XXXX.txt" ".\XXXX\"
+  12 tree /f
+  13 Remove-Item -Path ".\XXXX\XXXX\"
+  14 tree 
+
+
+PS C:\Powershell_Test2> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20231215091612
+**********************
